@@ -12,3 +12,8 @@ jobs:
         run: |
           node --version
           npm --version
+      - name: Run a python script
+        run: |
+          import sys
+          print(sys.version)
+        shell: python
